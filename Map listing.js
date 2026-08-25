@@ -59,6 +59,9 @@
         map.setView([userLat, userLng], 12);
         L.marker([userLat, userLng], { icon: redIcon }).addTo(map).bindPopup('You are here').openPopup();
         updateNearest(userLat, userLng);
+        if (typeof window.FINDAZ_ON_LOCATED === 'function') {
+          window.FINDAZ_ON_LOCATED(map, userLat, userLng, listings);
+        }
       },
       () => {
         const nameEl = document.getElementById('nearestName');

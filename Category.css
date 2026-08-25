@@ -16,6 +16,41 @@
 
 .category-head { margin-bottom: 28px; }
 
+.category-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.boutique-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 16px;
+  min-width: 240px;
+}
+
+.boutique-search input {
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  width: 100%;
+  background: transparent;
+  color: var(--ink);
+}
+
+.map-note {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin: -20px 0 32px;
+}
+
 .category-head h1 {
   font-family: var(--font-display);
   font-size: clamp(1.7rem, 3.4vw, 2.3rem);
